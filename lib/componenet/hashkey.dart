@@ -16,14 +16,7 @@ class HashKey extends StatefulWidget {
 class _HashKeyState extends State<HashKey> {
   static AudioCache player = AudioCache();
 
-  void initState() {
-    super.initState();
-    if(  WidgetsBinding.instance!=null)
-      {
-        WidgetsBinding.instance!
-            .addPostFrameCallback((_) => onTap());
-      }
-  }
+
  void onTap()
   {
 
@@ -37,7 +30,7 @@ class _HashKeyState extends State<HashKey> {
 
 
     return Container(
-      height: 110,
+      height: 80,
       width: 33,
       color:  widget.a==0?Colors.black:Colors.blueAccent,
       child: TextButton(onPressed:(){

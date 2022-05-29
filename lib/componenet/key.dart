@@ -13,7 +13,7 @@ class MainKey extends StatefulWidget {
 
 class _MainKeyState extends State<MainKey> {
   static AudioCache player = AudioCache();
-  void onTap() {
+  void  onTap() {
 
     player.play('${widget.bkey}.mp3');
   }
@@ -30,12 +30,11 @@ class _MainKeyState extends State<MainKey> {
       decoration: BoxDecoration(
           color: widget.a == 1 ? Colors.blueAccent : Colors.white,
           border: Border.all(color: Colors.black)),
-      height: 170,
+      height: 140,
       width: 48,
-      child: TextButton(
-          onPressed: () {
-            onTap();
-          },
+      child: TextButton(onPressed: (){onTap();},
+
+
           child: Align(
               alignment: Alignment.bottomCenter,
               child: Text(widget.bkey,
